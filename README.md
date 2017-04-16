@@ -8,23 +8,28 @@
 - Change background color with shape animation
 - Easy to custom and easy to use
 
+![image](https://raw.githubusercontent.com/XSAM/IOS-Material-Animation/master/For%20README/demonstration.gif)
+
 ## Installation
 - Download the latest release version or add the repository as a git submodule to your git-tracked project.
 - Open your project in Xcode, then drag and drop all the folder directories in BSXMaterialAnimation folder onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project.
 
+## Example
+Checkout the Example project
+
 ## Usage
 Import in your file
-```
+```Objective-c
 #import "UIView+BSXMaterialAnimation.h"
 ```
 
 Setup UIView
-```
+```Objective-c
 [self.uiview setupForBSXAnimation];
 ```
 
 Run animation with UIView
-```
+```Objective-c
 [self.uiview runBSXAnimateWithCGPoint:CGPointMake(0, 0)
                       backgroundColor:[self randomColor]
                              isExpand:true

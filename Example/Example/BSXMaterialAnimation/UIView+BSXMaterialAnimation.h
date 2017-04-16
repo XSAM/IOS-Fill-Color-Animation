@@ -13,8 +13,6 @@
 
 - (void)setupForBSXAnimation;
 
-- (void)resetBSXAnimationBounds;
-
 - (Boolean)runBSXAnimateWithCGPoint:(CGPoint)centerPoint
                  backgroundColor:(UIColor*)backgroundColor
                         isExpand:(Boolean)isExpand

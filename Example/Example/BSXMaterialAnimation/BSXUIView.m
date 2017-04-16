@@ -25,7 +25,7 @@
 
 @implementation BSXUIView
 
-#pragma lazy instantiation
+#pragma mark - lazy instantiation
 
 - (CAShapeLayer*)maskLayer
 {
@@ -38,10 +38,7 @@
     return _maskLayer;
 }
 
-- (void)resetBounds:(CGRect)bounds
-{
-    self.frame = bounds;
-}
+#pragma mark - setup
 
 - (id)initWithUIView:(UIView*)uiView
 {
@@ -58,6 +55,8 @@
     }
     return self;
 }
+
+#pragma mark - animation
 
 - (Boolean)animateWithCGPoint:(CGPoint)centerPoint
               backgroundColor:(UIColor*)backgroundColor
@@ -135,6 +134,8 @@
         return false;
     }
 }
+
+#pragma mark - generic method
 
 //calculate the max distance amount uiview corner points
 - (CGFloat)getMaxDiameterWithCGPoint:(CGPoint)centerPoint

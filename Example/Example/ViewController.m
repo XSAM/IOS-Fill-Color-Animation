@@ -31,6 +31,8 @@
     [self.uiview setupForBSXAnimation];
 }
 
+#pragma mark - button event
+
 - (IBAction)expand:(id)sender
 {
     [self.uiview runBSXAnimateWithCGPoint:CGPointMake(0, 0)
@@ -50,6 +52,8 @@
                            timingFunction:nil
                                completion:nil];
 }
+
+#pragma mark - touch event
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
@@ -84,12 +88,15 @@
     }
 }
 
+#pragma mark - slider event
+
 - (IBAction)sliderValueChanged:(UISlider *)sender
 {
     self.durationValueLabel.text = [NSString stringWithFormat:@"%0.02f",sender.value];
     self.duration = sender.value;
 }
 
+#pragma mark - generic method
 
 - (UIColor *)randomColor
 {

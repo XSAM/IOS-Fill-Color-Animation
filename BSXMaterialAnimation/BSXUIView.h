@@ -11,7 +11,6 @@
 @interface BSXUIView : UIView
 
 - (id)initWithUIView:(UIView*)uiView;
-- (void)resetBounds:(CGRect)bounds;
 - (Boolean)animateWithCGPoint:(CGPoint)centerPoint
               backgroundColor:(UIColor*)backgroundColor
                      isExpand:(Boolean)isExpand

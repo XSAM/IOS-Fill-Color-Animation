@@ -18,12 +18,6 @@ NSInteger const BSXAnimationViewTag = 927;
     animationView.tag = BSXAnimationViewTag;
 }
 
-- (void)resetBSXAnimationBounds
-{
-    BSXUIView *animationView = (BSXUIView*)[self viewWithTag:BSXAnimationViewTag];
-    [animationView resetBounds:self.bounds];
-}
-
 - (Boolean)runBSXAnimateWithCGPoint:(CGPoint)centerPoint
                     backgroundColor:(UIColor*)backgroundColor
                            isExpand:(Boolean)isExpand

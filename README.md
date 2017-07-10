@@ -31,9 +31,9 @@ Setup UIView
 Run animation with UIView
 ```Objective-c
 [self.uiview runBSXAnimateWithCGPoint:CGPointMake(0, 0)
-                      backgroundColor:[self randomColor]
+                      backgroundColor:[UIColor greenColor]
                              isExpand:true
-                             duration:self.duration
+                             duration:0.65f
                        timingFunction:nil
                            completion:nil];
 ```
